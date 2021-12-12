@@ -1,6 +1,6 @@
 {
-  "name": "scroll-out",
-  "version": "2.2.12",
+  "name": "scroll-out-updated",
+  "version": "2.2.13",
   "description": "Animate on scroll with ease",
   "main": "lib/index.js",
   "types": "types/index",
@@ -21,7 +21,7 @@
     "test": "npm run build:dev && ./node_modules/.bin/cypress run",
     "test:debug": "npm run build:debug & ./node_modules/.bin/cypress open"
   },
-  "author": "Christopher Wallis <christopher.j.wallis@gmail.com> (http://notoriousb1t.com)",
+  "author": "Christopher Wallis <christopher.j.wallis@gmail.com> (http://notoriousb1t.com), Mod: Jakub Buszynski <buszynski@gmail.com>",
   "license": "MIT",
   "devDependencies": {
     "@types/uglify-js": "^3.0.3",
