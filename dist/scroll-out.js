@@ -146,8 +146,8 @@ var ScrollOut = (function () {
                   elementHeight;
               var intersectX = visibleX === 1 ? 0 : sign(offsetX - clientOffsetX);
               var intersectY = visibleY === 1 ? 0 : sign(offsetY - clientOffsety);
-              var viewportX = clamp((clientOffsetX - doc.offsetLeft - (elementWidth / 2 + offsetX - clientWidth / 2)) / (clientWidth / 2), -1, 1);
-              var viewportY = clamp((clientOffsety - doc.offsetTop - (elementHeight / 2 + offsetY - clientHeight / 2)) / (clientHeight / 2), -1, 1);
+              var viewportX = clamp((clientOffsetX + doc.offsetLeft - (elementWidth / 2 + offsetX - clientWidth / 2)) / (clientWidth / 2), -1, 1);
+              var viewportY = clamp((clientOffsety + doc.offsetTop - (elementHeight / 2 + offsetY - clientHeight / 2)) / (clientHeight / 2), -1, 1);
               var visible = void 0;
               if (opts.offset) {
                   visible = unwrap(opts.offset, element, ctx, doc) <= clientOffsety ? 1 : 0;

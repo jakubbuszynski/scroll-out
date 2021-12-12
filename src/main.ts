@@ -91,12 +91,12 @@ export default function (opts: IScrollOutOptions) {
       const intersectX = visibleX === 1 ? 0 : sign(offsetX - clientOffsetX);
       const intersectY = visibleY === 1 ? 0 : sign(offsetY - clientOffsety);
       const viewportX = clamp(
-        (clientOffsetX - doc.offsetLeft - (elementWidth / 2 + offsetX - clientWidth / 2)) / (clientWidth / 2),
+        (clientOffsetX + doc.offsetLeft - (elementWidth / 2 + offsetX - clientWidth / 2)) / (clientWidth / 2),
         -1,
         1
       );
       const viewportY = clamp(
-        (clientOffsety- doc.offsetTop- (elementHeight / 2 + offsetY - clientHeight / 2)) / (clientHeight / 2),
+        (clientOffsety+ doc.offsetTop- (elementHeight / 2 + offsetY - clientHeight / 2)) / (clientHeight / 2),
         -1,
         1
       );
